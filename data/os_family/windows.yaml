@@ -1,0 +1,2 @@
+consul::bin_dir: 'C:\ProgramData\consul'
+consul::init_style: 'unmanaged'

@@ -1,0 +1,11 @@
+consul::data_dir_mode: '0775'
+consul::binary_group: undef
+consul::binary_mode: '0775'
+consul::binary_name: 'consul.exe'
+consul::binary_owner: 'NT AUTHORITY\NETWORK SERVICE'
+consul::config_defaults:
+  data_dir: 'C:\ProgramData\consul'
+consul::manage_user: false
+consul::manage_group: false
+consul::user: 'NT AUTHORITY\NETWORK SERVICE'
+consul::group: 'Administrators'

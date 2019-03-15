@@ -1,0 +1,61 @@
+lookup_options:
+  consul::acls:
+    merge: deep
+  consul::config_hash:
+    merge: deep
+  consul::config_defaults:
+    merge: deep
+  consul::checks:
+    merge: deep
+  consul::services:
+    merge: deep
+  consul::service_config_hash:
+    merge: deep
+  consul::watches:
+    merge: deep
+
+consul::acls: {}
+consul::allow_binding_to_root_ports: false
+consul::arch: "%{facts.os.architecture}"
+consul::archive_path: ''
+consul::bin_dir: '/usr/local/bin'
+consul::binary_group: 0
+consul::binary_mode: '0555'
+consul::binary_name: 'consul'
+consul::binary_owner: 'root'
+consul::checks: {}
+consul::config_dir: '/etc/consul'
+consul::config_defaults:
+  data_dir: '/opt/consul'
+consul::config_hash: {}
+consul::config_mode: '0664'
+consul::data_dir_mode: '0755'
+consul::docker_image: 'consul'
+consul::download_extension: 'zip'
+consul::download_url: null
+consul::download_url_base: 'https://releases.hashicorp.com/consul/'
+consul::extra_groups: []
+consul::extra_options: ''
+consul::enable_beta_ui: false
+consul::group: 'consul'
+consul::install_method: 'url'
+consul::init_style: "%{facts.service_provider}"
+consul::join_wan: false
+consul::log_file: '/var/log/consul'
+consul::manage_service: true
+consul::manage_user: true
+consul::manage_group: true
+consul::package_ensure: 'latest'
+consul::package_name: 'consul'
+consul::pretty_config: false
+consul::pretty_config_indent: 4
+consul::proxy_server: null
+consul::purge_config_dir: true
+consul::restart_on_change: true
+consul::service_enable: true
+consul::service_ensure: 'running'
+consul::services: {}
+consul::service_config_hash: {}
+consul::user: 'consul'
+consul::version: '1.2.3'
+consul::watches: {}

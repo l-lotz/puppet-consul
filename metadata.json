@@ -1,6 +1,6 @@
 {
   "name": "KyleAnderson-consul",
-  "version": "5.0.4",
+  "version": "6.0.0-rc0",
   "author": "Kyle Anderson <kyle@xkyle.com>",
   "summary": "Configures Consul by Hashicorp",
   "license": "Apache-2.0",
@@ -127,7 +127,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.7.1 < 7.0.0"
+      "version_requirement": ">= 4.9.0 < 7.0.0"
     }
   ],
   "description": "Configures Consul by Hashicorp",
